@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="js.js"></script>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<p class="Title">ROAD MASTER</p>
+<p id="Car">Choose a Car:</p>
+<input type = "button" value = "RED CAR" id ="red" onclick=carRed() class="cars" >
+<input type = "button" value = "GREEN CAR" id ="green" onclick=carGreen() class="cars">
+<input type = "button" value = "YELLOW CAR" id ="yellow" onclick=carYellow() class="cars">
+<p id="Level">Choose a Level:</p>
+<input type = "button" value = "Easy" id ="easy" onclick=easyL() class="level" >
+<input type = "button" value = "Medium" id ="medium" onclick=mediumL() class="level">
+<input type = "button" value = "Hard" id ="hard" onclick=hardL() class="level">
+<br>
+
+<p id="score"></p>
+<p id="win"></p>
+<p id = "highscore"></p>
+<p id="check"></p>
+<p id="disp"></p>
+
+<br>
+<input type = "button" value = "How to Play" id ="htp" onclick=instructions() class="buttons">
+<input type = "button" value = "Start" id ="start" onclick=check() class="buttons" >
+<input type = "button" value = "reset" id ="reset" onclick=reset() class="buttons">
+<input type = "button" value = "||" id ="pause" onclick=Pause() class="buttons">
+<input type = "button" value = "cheat" id ="cheat" onclick=Cheat() class="buttons">
+
+<br>
+
+<body onload="initialize()">
+<canvas id="myCanvas" width="500" height="520" style="border:1px solid #000000;">
+</canvas>
+
+
+</body>
+</html>
